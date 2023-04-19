@@ -40,7 +40,6 @@ function empty() {
 //Function to check the number of items in array basket
 function isFull(){
     console.log('in isFull');
-    console.log(basket.length);
     if (basket.length<maxItems){
         return false;
     }
@@ -51,6 +50,19 @@ function isFull(){
 }
 
 
+//Function to remove an Item
+function removeItem( item ) {
+    console.log('in removeItem');
+    console.log(basket.indexOf(item));
+    
+    if ( (basket.indexOf(item)) >= 0 ) {
+        basket.splice( (basket.indexOf(item)),1 );
+        return `${item}, removed`;
+    }else {
+        return null;
+    }
+
+}
 
 
 
@@ -62,7 +74,7 @@ console.log(addItem('apple'));
 console.log(addItem('pie'));
 console.log(listItems());
 console.log(isFull());
-console.log(addItem());
+console.log(removeItem('pear'));
 console.log(empty());
 
 
