@@ -75,13 +75,15 @@ console.log(addItem('pie'));
 console.log(listItems());
 console.log(isFull());
 console.log(removeItem('pear'));
+
+
+console.log(`Basket is ${basket}`);
+console.log('Adding apples (expect true)', addItem('apples'));
+console.log(`Basket is now ${basket}`);
+
+
+
 console.log(empty());
-
-
-
-
-
-
 
 
 
