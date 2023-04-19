@@ -26,21 +26,21 @@ function listItems() {
 
 //When called returns basket to an empty arry
 function empty() {
-
-
-
-
+    basket = [];
 
 }
 
 //Test Calls
 console.log(addItem('apple'));
-console.log(empty());
 console.log(addItem('pie'));
 console.log(listItems());
 
 
 
+console.log(empty());
+
+
+console.log(basket);
 
 
 
